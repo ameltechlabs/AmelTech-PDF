@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ameltech-pdf",
+  "version": "1.6.0",
+  "description": "A LaTeX-first document engineering workflow for complex exam papers, lab manuals, derivations, calculations, diagrams, graphs, and verified PDF output with professional A4 formatting, exact 1.5 cm margins, left page numbering, and right-side AmelTech PDF footer.",
+  "author": {
+    "name": "AmelTech Labs"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "AmelTech PDF",
+        "shortDescription": "High-accuracy LaTeX-first exam and lab PDF engineering",
+        "longDescription": "Solve and structure complex academic and technical documents with requirement decomposition, method selection, independent mathematical and numerical checks, diagram and graph validation, layout stress testing, and exact LaTeX-to-PDF source lineage. Use professional A4 formatting with 1.5 cm margins, left page numbering, and right-side AmelTech PDF footer.",
+        "developerName": "AmelTech Labs",
+        "category": "Education",
+        "capabilities": [
+          "File creation",
+          "Interactive"
+        ],
+        "defaultPrompt": "Analyze the complete request, build a requirements and dependency map, solve and verify the content, create and audit the LaTeX source, apply the standard professional A4 layout with exact 1.5 cm margins, left page numbering, and right-side AmelTech PDF footer, compile that exact source to PDF when possible, inspect the result, and deliver separate .tex and PDF files with honest verification notes."
+      }
+    }
+  }
+}
